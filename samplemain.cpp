@@ -8,5 +8,6 @@ int main(){
 	recv = receive(sock, 32);
 	std::cout << recv;
 	send(sock, "aiueo");
+	close(sock);
 	return 0;
 }

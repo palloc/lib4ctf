@@ -13,10 +13,11 @@ Receive some message(max length=len) from the server and return it.
 Send message to the server.
 
 ### sample
+
 - echo "test"|nc -l 1024  (prepare the test server)
 - open other terminal
 - g++ samplemain.cpp -L ./src -l lib4ctf
 - ./a.out
 
-*** <string> is lready included ***
+``` <string> is lready included ```
 

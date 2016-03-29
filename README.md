@@ -19,5 +19,5 @@ Send message to the server.
 - g++ samplemain.cpp -L ./src -l lib4ctf
 - ./a.out
 
-``` <string> is lready included ```
+``` <string> is already included ```
 

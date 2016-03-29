@@ -7,10 +7,10 @@
 Make TCP connection to the server(IP address=addr,port=port).
 
 #### string receive(int sock, int len) 
-Receive some message(max length=len) from the server and return it.
+Receive a message(max length=len) from the server and return it.
 
 #### void send(int sock,string message)
-Send message to the server.
+Send a message to the server.
 
 ### sample
 

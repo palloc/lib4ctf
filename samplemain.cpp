@@ -4,10 +4,17 @@
 int main(){
 	int sock;
 	std::string recv;
-	sock = connect("127.0.0.1", 1024);
-	recv = receive(sock, 32);
+	std::string buf;
+	/* Domain or IPaddress */
+	sock = connect("localhost", 1024);
+	if(sock == -1){
+		std::cout << "error.";
+		return 0;
+	}
+	recv = receive(sock, 1024);
 	std::cout << recv;
-	send(sock, "aiueo");
+	buf = "test";
+	send(sock, buf);
 	close(sock);
 	return 0;
 }

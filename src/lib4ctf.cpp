@@ -1,5 +1,6 @@
 #include "lib4ctf.h"
 
+/* make TCP connection */
 int connect(std::string addr,int port){
 	struct sockaddr_in server;
 	int sock;
@@ -19,6 +20,7 @@ int connect(std::string addr,int port){
 	return sock;
 }
 
+/* receive a packet */
 std::string receive(int sock, int len){
 	std::string temp;
 	char buf[len];
@@ -28,6 +30,7 @@ std::string receive(int sock, int len){
 	return temp;
 }
 
+/* send a packet */
 void send(int sock, std::string message){
 	char* temp;
 	write(sock, message.c_str(), sizeof(message.c_str()));

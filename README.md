@@ -1,5 +1,8 @@
 # lib4ctf
+CTF library for C++er.
+
 ## How to use
+See sample.
 
 ### function
 

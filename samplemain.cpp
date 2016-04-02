@@ -11,7 +11,7 @@ int main(){
 		std::cout << "error.";
 		return 0;
 	}
-	recv = receive(sock, 1024);
+	recv = receive(sock, 10000);
 	std::cout << recv;
 	buf = "test";
 	send(sock, buf);

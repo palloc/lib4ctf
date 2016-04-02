@@ -33,5 +33,5 @@ std::string receive(int sock, int len){
 /* send a packet */
 void send(int sock, std::string message){
 	char* temp;
-	write(sock, message.c_str(), sizeof(message.c_str()));
+	write(sock, message.c_str(), message.size());
 }
